@@ -1,0 +1,64 @@
+<header class="header">
+    <div class="header__container">
+        <button type="button" class="icon-burger"><span></span></button>
+
+        <a href="index.html" class="header__logo logo">
+            <img src="@img/logo.svg" alt="WiSchol logo">
+        </a>
+
+        <div class="header__menu-wrapper">
+            <nav class="header__menu menu">
+                <ul class="menu__body">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link">
+                            <span class="menu__link_main">Home</span>
+                            <span class="menu__link_hover">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Courses</span>
+                            <span class="menu__link_hover">Courses</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Instructors</span>
+                            <span class="menu__link_hover">Instructors</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Schedules</span>
+                            <span class="menu__link_hover">Schedules</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Contact Us</span>
+                            <span class="menu__link_hover">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="header__actions actions-header">            
+            <button data-popup-open="popup-search" type="button" class="actions-header__search-btn _icon-search"></button>
+            <button type="button" class="actions-header__login btn btn_no-bg">Login</button>
+            <button type="button" class="actions-header__reg btn">Register</button>
+            <button type="button" class="actions-header__prifile _icon-profile"></button>
+        </div>
+
+        <div data-popup="popup-search" data-moveto="header__menu, first, 767.95, max" class="header__search search-header">
+            <form data-form-req action="#" class="search-header__form">
+                <div class="search-header__row">
+                    <input data-required type="text" class="search-header__input" placeholder="What do you want to know?">
+                    <button data-popup-close="popup-search" type="button" class="search-header__btn-close _icon-close"></button>
+                </div>
+                <button type="submit" class="search-header__btn-search btn">Search</button>
+            </form>
+        </div>
+    </div>
+</header>
